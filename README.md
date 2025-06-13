@@ -115,8 +115,3 @@ Para visualização de uma versão demo do site clique [aqui](https://site-venda
 
 Desenvolvido por **@xJhowx**.
 
----
-
-## 👨‍💻 Créditos
-
-Desenvolvido com ❤️ por **@xJhowx**.
