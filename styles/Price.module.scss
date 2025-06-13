@@ -1,0 +1,17 @@
+.priceContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 8px;
+
+  .currentPrice {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #2c3e50;
+  }
+
+  .installments {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+  }
+}
