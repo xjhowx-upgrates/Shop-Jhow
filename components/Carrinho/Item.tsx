@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { useDispatch } from 'react-redux';
-import { CartItem, removeFromCart, updateQuantity } from '../../store/slices/cartSlice';
+import { removeFromCart, updateQuantity } from '../../store/slices/cartSlice';
+import { CartItem } from '../../lib/types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus, faMinus, faXmark } from '@fortawesome/free-solid-svg-icons';
 import styles from '../../styles/Carrinho.module.scss';
@@ -31,7 +32,7 @@ function Item({ item }: Props) {
   return (
     <div className={styles.item} data-cy="cart-item">
       <div className={styles.itemImagem}>
-        <Image src={item.image} alt={item.name} height={100} width={100} />
+        <Image src={item.images[0]} alt={item.name} height={100} width={100} />
       </div>
       <div className={styles.itemDescricao}>
         <p>{item.name}</p>
